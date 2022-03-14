@@ -1,0 +1,15 @@
+version: "3"
+services:
+  <nombre del proyecto>-<nombre del microservicio>:
+    image: ${CI_REGISTRY_IMAGE}:latest
+    container_name: <nombre del proyecto>-${CI_PROJECT_NAME}
+    restart: unless-stopped
+    extra_hosts:
+      - "cidi.test.cba.gov.ar cuentacidi.test.cba.gov.ar comunicacioncidi.test.cba.gov.ar documentacioncidi.test.cba.gov.ar apidocumentoscdd.test.cba.gov.ar interaccioncidi.test.cba.gov.ar mobilecidi.test.cba.gov.ar gruposfamiliares.test.cba.gov.ar padronbeneficiarios.test.cba.gov.ar:10.250.10.30"
+      - "gruposfamiliares.cba.gov.ar:10.250.7.29"
+    networks:
+      - network_<nombre red docker>
+networks:
+  network_<nombre red docker>:
+    external:
+      name: network_<nombre red docker>

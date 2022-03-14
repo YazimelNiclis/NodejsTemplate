@@ -1,0 +1,4 @@
+include:
+  - project: gobierno-de-cordoba/utils-pipelines
+    ref: master
+    file: deploy-ec2-tst.yml
