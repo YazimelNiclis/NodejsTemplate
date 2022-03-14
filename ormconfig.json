@@ -1,10 +1,10 @@
 {
   "type": "mysql",
-  "host": "tribunal-cuentas-db-1.cbdgy22w0gvo.us-east-1.rds.amazonaws.com",
-  "port": "33306",
-  "username": "admin",
-  "password": "5RDtqxisF7X1k",
-  "database": "tribunal_cuentas",
+  "host": "",
+  "port": "",
+  "username": "",
+  "password": "",
+  "database": "",
   "synchronize": true,
   "logging": false,
   "poolMax": 10,
@@ -12,9 +12,15 @@
   "poolIncrement": 0,
   "enableStats": true,
   "keepConnectionAlive": true,
-  "entities": ["src/models/entities/*.ts"],
-  "migrations": ["src/migration/**/*.ts"],
-  "subscribers": ["src/subscriber/**/*.ts"],
+  "entities": [
+    "src/models/entities/*.ts"
+  ],
+  "migrations": [
+    "src/migration/**/*.ts"
+  ],
+  "subscribers": [
+    "src/subscriber/**/*.ts"
+  ],
   "cli": {
     "entitiesDir": "src/data",
     "migrationsDir": "src/migration",
