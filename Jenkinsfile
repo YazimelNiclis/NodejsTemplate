@@ -7,9 +7,9 @@ pipeline {
     REGISTRY_CREDENTIAL_SET = '<credenciales de usuario registry>'
 	REGISTRY_CREDS = credentials('<credenciales de usuario registry>')
     REGISTRY_URI = "https://${REGISTRY}"
-    ROOT_DIR = "/home/cidsuser/<nombre/abreviatura del proyecto>/${REPO_NAME}"
-	PROXY_SRV = 'http://proxySrv.gobiernocba.gov.ar:8080/' 
-	PROXY_DESA = 'http://proxydesa.gobiernocba.gov.ar:8080/'		
+    ROOT_DIR = "/${REPO_NAME}"
+	PROXY_SRV = '' 
+	PROXY_DESA = ''		
 	DEPLOY_USR='cidsuser'
 	DEPLOY_PORT='22'
 	PATH_DOCKERFILE='./Dockerfile'
